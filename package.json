@@ -1,0 +1,36 @@
+{
+  "name": "mathexpression-plugin",
+  "version": "1.0.0",
+  "description": "HTML plugin to create math expression images from LaTeX input based on MathJax",
+  "main": "src/index.html",
+  "window": {
+    "toolbar": true
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nw --remote-debugging-port=9222"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjibbevanderlaan/mathexpression-plugin.git"
+  },
+  "keywords": [
+    "html",
+    "node",
+    "math",
+    "expression",
+    "svg",
+    "node"
+  ],
+  "author": "Tjibbe van der Laan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tjibbevanderlaan/mathexpression-plugin/issues"
+  },
+  "homepage": "https://github.com/tjibbevanderlaan/mathexpression-plugin#readme",
+  "devDependencies": {
+    "materialize-css": "^0.100.2",
+    "mathjax-node": "^1.2.1",
+    "nw": "^0.27.2"
+  }
+}

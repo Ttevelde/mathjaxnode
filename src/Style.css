@@ -1,0 +1,46 @@
+
+  /* Layout configuration */
+  html, body, #wrapper {
+    height: 100%;
+    padding: 20px 0px 20px 0px;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Preview box to show the expression in */
+  .expression-preview {
+    flex: 1 100%;
+  }
+
+  /* Center the previewed expression */
+  .centerbox {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* CSS-based grid illustration for the backgroun of the preview box */
+  .grid-view {
+    background-size: 20px 20px;
+    background-position: -1px -1px;
+    background-image: linear-gradient(to right, #bdbdbd 1px, transparent 1px), linear-gradient(to bottom, #bdbdbd 1px, transparent 1px);
+  }
+  
+  /* In case of a failure, change label focus color */
+  .failure .input-field input[type=text]:focus+label {
+    color: #f57c00;
+  }
+
+  /* In case of a failure, change selection color */
+  .failure .input-field input[type=text]::selection {
+    background-color: #ffcc80;
+  }
+  
+  /* In case of a failure, change label underline focus color */
+  .failure .input-field input[type=text]:focus {
+    border-bottom: 1px solid #f57c00;
+    box-shadow: 0 1px 0 0 #f57c00;
+  }
